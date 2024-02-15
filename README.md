@@ -1,2 +1,2 @@
-# COM214
-Currently HW 2 for COM 214. I plan to continue to contribute to this repo and these HTML files to try and expand this into my final project. 
+# COM214 - HW 2
+The site I want to create is an MP4 to MP3 converter, that can then take that MP3 file and add it to your spotify account. The opening page I've created is where you get to choose whether or not you want to choose MP4 --> MP3 conversion, or MP3 to Spotify upload. I've also added a page for the MP4 --> MP3, where you can either upload a YouTube link or an MP4 file in which you want to convert to an MP3 file. 
