@@ -9,13 +9,6 @@
             body {
                 background-color: rgb(18,18,18);
             }
-            .container{
-                height:80px;
-    			width:100%;
-                background-color: rgb(33,33,33);
-                /* background: linear-gradient(#898c8a, rgb(33,33,33)); */
-
-            }
 
             #container2{
                 border: 3px solid grey;
@@ -23,14 +16,46 @@
             margin-right: 250px;
             margin-left: 250px;
             }
-            
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                }
+
+                li {
+                    float: left;
+                    }
+
+                li a {
+                display: block;
+                color: white;
+                font-weight: 500;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+
+                li a:hover:not(.active) {
+                    background-color: rgb(29,185,84);
+                    color: black;
+                }
+
+                .active {
+                 font-weight: 900;
+                }
        </style>
 
     </head>
     <body>
-        <div style = " background-color: rgb(33,33,33); width:99%; margin-top: -19px; height: 40px"  > 
-                <h2 style = "color: white; text-align: center;">A/V to Spotify</h2>
-        </div>
+        
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        
         
         <h1 style = "color: rgb(29,185,84); text-align: center;">
             MP4 to MP3 || MP3 to Spotify
