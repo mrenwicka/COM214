@@ -48,6 +48,16 @@
                  font-weight: 900;
                 }
 
+                table {
+                    border-collapse: collapse;
+                }
+
+                td, th {
+                    border: 1px solid white;
+                    color: white;
+                    font-family:courier;
+                    }
+
                  
        </style>
 
@@ -58,18 +68,17 @@
             <li><a href="index.html">
                 <img  src=Sense-plan-act.jpg alt="Site image" width="90" height="40">
             </a></li>
-            <li><a class="active" href="about.html" style = "margin-top: 11px;">About</a></li>
+            <li><a class="active" href="about.html" style = "margin-top: 12px;">About</a></li>
         </ul>
         
         
         <h1 style = "color: rgb(29,185,84); text-align: center;">
             MP4 to MP3 || MP3 to Spotify
         </h1>
-        <br>
-        <br>
+    
         <div style = "border: 2px solid grey; margin-bottom: 15px; margin-left: 18px; margin-right: 18px; ">
-            <h2 style = "color: rgb(29,185,84);">About A/V to Spotify?</h1>
-            <p style = "color: white; font-family:courier; font-size: 17px;"> 
+            <h2 style = "color: rgb(29,185,84); text-align: center;">About A/V to Spotify?</h1>
+            <p style = "color: white; font-family:courier; font-size: 17px; margin-left: 5px; margin-right: 5px;"> 
                 A/V to Spotify was created out of a desire to be able to save unreleased
                  music from your favorite artists onto your spotify account, so it could 
                  be in the same place as all your other music. It is a program that does 2 things:
@@ -82,21 +91,57 @@
 
         <div id = "infocontainer">
                 <div style = "margin-left: 18px; margin-right: 10px;width: 48%; float: left; border: 2px solid grey; " >
-                        <h2 style = "color: rgb(29,185,84); ">
+                        <h2 style = "color: rgb(29,185,84); text-align: center; ">
                             How it works: MP4 to MP3
                         </h2>
-                        <p style = "color: white; font-family:courier; font-size: 17px; ">
+                        <p style = "color: white; font-family:courier; font-size: 17px; margin-left: 5px; margin-right: 5px;">
                             1. Essentially
                         </p>
                         
                 </div>
                 <div style = "width: 48%; float: left; border: 2px solid grey; ">
-                    <h2 style = "color: rgb(29,185,84);">
+                    <h2 style = "color: rgb(29,185,84); text-align: center;">
                         How it works: MP3 to Spotify
                     </h2>
-                    <p style = "color: white; font-family:courier; font-size: 17px; ">
-                        Once you select and drag and drop your MP3 file, the file goes through Spotify 
+                    <p style = "color: white; font-family:courier; font-size: 17px; margin-left: 5px; margin-right: 5px;">
+                        Once you select or drag and drop your MP3 file, the file goes through Spotify's API, which
+                        transfers your MP3 data directly to your Spotify account. Once it's uploaded, you can listen 
+                        to your new music! 
+                        <br>
+                        Technologies used:
                     </p>
+                    <table style = "margin-left: 5px; margin-right: 5px; margin-bottom: 5px;">
+                        <tr>
+                            <th>Technology</td>
+                            <th>Usage</td>
+                            <th>More Info</td>
+                        </tr>
+                        <tr>
+                            <td>Spotify API</td>
+                            <td>Spotify API takes the data you want to upload to the user's spotify and passes it through to that user's 
+                                account. Once it's on Spotify's end, the file name, image and other interface changes can be made.
+                            </td>
+                            <td>
+                                <a href="https://developer.spotify.com/documentation/web-api/concepts/api-calls"> link </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>JavaScript was used to add functionality to the site, and make it interactive.
+                                While it is less crucial of a technology than the Spotify API, it is still important
+                                to the functionality of the site. 
+                            </td>
+                            <td><a href="https://www.w3schools.com/js/"> link </a></td>
+                        </tr>
+                        <tr>
+                            <td>MongoDB</td>
+                            <td>MongoDB was used to create the backend of the program. In the backend, there are files for the 
+                                MP4 to MP3 part of the program, as well as a file/files to implement the token and API for Spotify. 
+                                It is essential to the program.
+                            </td>
+                            <td><a href="https://www.mongodb.com/"> link </a></td>
+                        </tr>
+                    </table>
                 </div>
         </div>
         
